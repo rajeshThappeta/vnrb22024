@@ -1,0 +1,13 @@
+.img1{
+   float: left; 
+}
+
+.img2{
+    float: right;
+}
+
+
+.img3{
+    display: block;
+    margin: auto;
+}
