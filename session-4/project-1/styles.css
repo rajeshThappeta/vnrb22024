@@ -1,0 +1,34 @@
+h1{
+    display: inline;
+}
+
+a{
+    display: block;
+}
+
+img{
+    width: 400px ;
+    /* height: 600px; */
+}
+
+.first{
+    text-align: center;
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.second{
+    text-align: right;
+    color:red;
+}
+
+
+h5{
+    font-size: 30px;
+}
+
+span{
+    color:orange;
+    font-style: italic;
+    font-weight: 100;
+}

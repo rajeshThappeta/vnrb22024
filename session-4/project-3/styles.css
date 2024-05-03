@@ -1,0 +1,18 @@
+body{
+    /* background-color: crimson; */
+    /* background-image:linear-gradient(to right,dodgerblue,lightblue,orange) ; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuHGKz4_KZfnkpsU6t-qBgyZ8yxjoS8dp7sc5DHGI38suz3Ulwd3p5ps5rP9aC2qIbEis&usqp=CAU');
+    background-color: red;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    background-color: lightcoral;
+}

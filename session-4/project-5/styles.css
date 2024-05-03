@@ -1,0 +1,22 @@
+h1{
+   text-align: center;
+   background-color: rebeccapurple;
+   color: lightpink;
+   padding:150px ;
+   font-size: 100px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-bottom: 300px;
+  
+}
+
+img{
+    width: 300px;
+    border: 4px solid red;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 150px;
+    margin: auto;
+    display: block;
+}
