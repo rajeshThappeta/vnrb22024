@@ -1,0 +1,19 @@
+/* :root matches root element */
+:root {
+  --light-color: hsl(0, 0%, 93%);
+  --medium-dark: hsl(210, 29%, 24%);
+  --dark-green: hsl(171, 52%, 18%);
+  --light-green: hsl(115, 94%, 33%);
+  --teal-blue: hsl(203, 92%, 19%);
+  --light-blue: hsl(193, 44%, 46%);
+  --dark-pink: hsl(334, 63%, 50%);
+  --dark-red: hsl(337, 91%, 45%);
+  --medium-pink: hsl(344, 38%, 48%);
+  --dark-brown: hsl(336, 16%, 31%);
+  --medium-brown: hsl(338, 20%, 65%);
+  --medium-yello: hsl(43, 71%, 47%);
+  --dark-purple: hsl(322, 78%, 42%);
+  --light-purple: hsl(281, 71%, 38%);
+  --dark-cyan: hsl(203, 57%, 10%);
+  --light-cyan: hsl(188, 35%, 41%);
+}

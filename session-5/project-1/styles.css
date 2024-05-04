@@ -1,0 +1,32 @@
+/* custom properties */
+:root{
+    --heading-color:blue;
+    --bg-color:lightblue;
+}
+
+/* universal selector */
+*{
+    padding: 0;
+    margin: 0;
+      /* include border and padding */
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    color:var(--heading-color);
+    background-color: var(--bg-color);
+}
+
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid red;
+    padding: 10px;
+  
+}
+
+/* width= width of content+left pd+right pd+left br+right br */
