@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- table -->
+    <table>
+      <!-- table header -->
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Full name</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <!-- table body -->
+      <tbody>
+        <!-- row-1 -->
+        <tr>
+          <td>1</td>
+          <td>Ravi</td>
+          <td>Developer</td>
+          <td>60000</td>
+        </tr>
+        <!-- row-2 -->
+        <tr>
+          <td>2</td>
+          <td>Bhanu</td>
+          <td>Test engineer</td>
+          <td>30000</td>
+        </tr>
+        <!-- row-3 -->
+        <tr>
+          <td>3</td>
+          <td>Manasa</td>
+          <td>AWS architect</td>
+          <td>90000</td>
+        </tr>
+        <!-- row-4-->
+        <tr>
+          <td>4</td>
+          <td>Vokas</td>
+          <td>Manager</td>
+          <td>100000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- rowspan example -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="3">1</td>
+          <td rowspan="3">David</td>
+          <td>Maths</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Computer science</td>
+          <td>78</td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">2</td>
+          <td rowspan="3">Alex</td>
+          <td>Maths</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Computer science</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- colspan example -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Expense</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Arun</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Priya</td>
+          <td>$8</td>
+        </tr>
+        <tr>
+          <td colspan="2">Sum : $18</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

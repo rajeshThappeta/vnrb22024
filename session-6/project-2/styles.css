@@ -1,0 +1,26 @@
+table{
+    width: 800px;
+    text-align: center;
+    margin: 200px auto;
+    font-size: 1.5rem;
+    background-color: lightblue;
+   
+}
+
+thead{
+    background-color: rgb(1, 102, 125);
+    color:white;
+}
+
+table,th,td{
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 15px 10px;
+}
+
+
+ tbody tr:hover{
+    background-color: orange;
+    color:white;
+    font-size: 1.6rem;
+}
