@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form -->
+    <form>
+      <!-- username -->
+      <div>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          autocomplete="off"
+          name="username"
+          required
+          minlength="4"
+          maxlength="6"
+        />
+      </div>
+
+      <!-- password -->
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+
+      <!-- age -->
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" />
+      </div>
+      <!-- date of joining -->
+      <div>
+        <label for="doj">Date of Joining</label>
+        <input type="date" name="doj" id="doj" />
+      </div>
+      <!-- email -->
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <!-- profile pic upload -->
+      <div>
+        <label for="pic">Profile pic</label>
+        <input type="file" name="pic" id="pic">
+      </div>
+      <!-- skills -->
+      <div>
+        <label>Select skills</label>
+        <!-- js skills -->
+        <div>
+            <input type="checkbox" name="js" id="js">
+            <label for="js">JavaScript</label>
+        </div>
+        <!-- java skill -->
+        <div>
+            <input type="checkbox" name="java" id="java">
+            <label for="java">Java</label>
+        </div>
+        <!-- react skill -->
+        <div>
+            <input type="checkbox" name="react" id="react">
+            <label for="react">React</label>
+        </div>
+      </div>
+      <!-- gender -->
+      <div>
+        <label>Choose gender</label>
+        <!-- male -->
+        <div>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+        </div>
+        <!-- female -->
+        <div>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+        <!-- others -->
+        <div>
+            <input type="radio" name="gender" id="others">
+            <label for="others">Others</label>
+        </div>
+      </div>
+
+      <!-- state -->
+      <div>
+        <label for="state">Select a state</label>
+        <select name="state" id="state">
+            <option value="" disabled selected>--select state--</option>
+            <option value="andhra pradesh">Andhra pradesh</option>
+            <option value="telangana">Telangana</option>
+            <option value="kerala">Kerala</option>
+        </select>
+      </div>
+      <!-- feedback -->
+      <div>
+        <label for="fb">Write feedback</label>
+        <textarea name="feedback" id="fb"  rows="5"></textarea>
+
+      </div>
+      <!-- submit button -->
+      <button type="submit">SIGNUP</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

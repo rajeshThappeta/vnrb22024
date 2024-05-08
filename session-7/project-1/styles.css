@@ -1,0 +1,57 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form{
+    width: 400px;
+    margin: 100px auto;
+    background-color: rgb(10, 144, 197);
+    padding: 30px;
+
+}
+
+label{
+    color: white;
+    font-size: 1.3rem;
+}
+
+input,textarea,select{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    /* outline: none; */
+    border: none;
+}
+
+input[type='checkbox'],input[type='radio']{
+    width: 20px;
+}
+
+
+div{
+    margin-bottom: 15px;
+}
+
+
+button{
+    border: none;
+    padding: 6px 10px;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type='submit']{
+    background-color: darkmagenta;
+    color: white;
+}
+
+button[type='reset']{
+    background-color:orange;
+}
+
+
