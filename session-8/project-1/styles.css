@@ -1,0 +1,56 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 700px;
+  height: 700px;
+  border: 2px solid blue;
+  margin: 20px auto;
+  font-size: 2rem;
+  color: white;
+  /* create flex container */
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  /* gap: 10px 10px; */
+  /* horizontal aligbment */
+  justify-content:space-around ;
+  /* vertical */
+  align-items: center;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  /* flex-grow: 1; */
+}
+
+.child1 {
+  background-color: red;
+  /* flex-grow: 1; */
+  align-self: flex-start;
+}
+.child2 {
+  background-color: green;
+  /* flex-grow: 2; */
+  align-self: center;
+}
+.child3 {
+  background-color: orange;
+  /* flex-grow: 3; */
+  align-self: flex-end;
+}
+
+
+/* 
+700-300=400
+free space=400px
+1 share-66px+100= 166
+2 shares- 132px+100=232
+3 shares- 198px+100=298
+
+*/

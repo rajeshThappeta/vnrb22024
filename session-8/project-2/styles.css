@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+/* nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+  list-style-type: none;
+  color: goldenrod;
+  font-size: 1.5rem;
+}
+
+/* header */
+header {
+  background-image: url("../../assets/1.webp");
+  padding: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h1 {
+  color: orange;
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.4rem;
+  color: yellow;
+}
+
+/* main */
+main {
+  margin: 20px 60px;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.item {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 10px;
+}
+
+.item button{
+    background-color: orangered;
+    padding: 5px 12px;
+    border: none;
+    color:white;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+.item img {
+  width: 130px;
+}
+
+
+/* footer */
+footer{
+    background-color: black;
+    color:white;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
