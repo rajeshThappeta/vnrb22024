@@ -14,6 +14,9 @@ nav {
   background-color: black;
   padding: 10px 20px;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index:1;
 }
 
 nav ul {
@@ -62,6 +65,14 @@ section{
   text-align: center;
   box-shadow: 0px 0px 10px grey;
   border-radius: 10px;
+  position: relative;
+}
+
+.item .new-logo{
+  position: absolute;
+  width: 70px;
+  top:0;
+  right:0;
 }
 
 .item button{
@@ -85,4 +96,12 @@ footer{
     padding: 50px 0px;
     display: flex;
     justify-content: space-evenly;
+}
+
+
+.wt-logo{
+  width: 50px;
+  position: fixed;
+  bottom:200px;
+  right:50px;
 }

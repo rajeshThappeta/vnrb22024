@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1000px;
+}
+
+h1{
+    text-align: center;
+    color: steelblue;
+    font-size: 4rem;
+   
+}
+
+.parent{
+    border: 2px solid black;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    color: white;
+}
+
+.child-1{
+    background-color: red;
+    position: absolute;
+    left:10px;
+    top:10px;
+}
+
+.child-2{
+    background-color: blue;
+    position: sticky;
+    top:50px;
+}
+
+.child-3{
+    background-color: green;
+    position: fixed;
+}
