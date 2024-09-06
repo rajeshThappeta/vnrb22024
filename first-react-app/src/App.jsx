@@ -1,12 +1,15 @@
 import './App.css';
+import First from './components/first/First';
+import Second from './components/second/Second';
 
 function App() {
   //business logic
   //return react element
   return (
     <div>
-      <h1>Welcome to React</h1>
-      <p>This is a para</p>
+      {/*connect Second component  */}
+      <Second />
+      {/* <First /> */}
     </div>
   );
 }
