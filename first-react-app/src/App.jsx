@@ -1,4 +1,6 @@
 import './App.css';
+import EffectDemo from './components/EffectDemo';
+import EffectDemo2 from './components/EffectDemo2';
 import Eventdemo from './components/Eventdemo';
 import First from './components/first/First';
 import Products from './components/Products';
@@ -12,7 +14,7 @@ function App() {
   return (
     <div className='container text-center'>
       {/*nest EventDemo component  */}
-      <StateChangeDemo />
+      <EffectDemo2 />
       {/* <First /> */}
     </div>
   );
