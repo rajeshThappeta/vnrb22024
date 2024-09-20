@@ -1,25 +1,40 @@
 import "./App.css";
-import EffectDemo from "./components/EffectDemo";
-import EffectDemo2 from "./components/EffectDemo2";
-import Eventdemo from "./components/Eventdemo";
-import First from "./components/first/First";
-import FormDemo1 from "./components/FormDemo1";
-import ManageTasks from "./components/ManageTasks";
-import Parent from "./components/Parent";
-import Products from "./components/Products";
-
-import Second from "./components/second/Second";
-import StateChangeDemo from "./components/StateChangeDemo";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./components/RootLayout";
+import Home from './components/Home';
+import Register from './components/Register';
+import Login from './components/Login';
+import Technologies from './components/Technologies'
+import RouteError from "./components/RouteError";
 
 function App() {
-  //business logic
-  //return react element
-  return (
-    <div className="container ">
-      {/*nest Parent component  */}
-      <ManageTasks />
-    </div>
-  );
+  const browserRouterObj = createBrowserRouter([
+    {
+      path: "",
+      element: <RootLayout />,
+      errorElement:<RouteError />,
+      children:[
+        {
+          path:'',
+          element:<Home />
+        },
+        {
+          path:"register",
+          element:<Register />
+        },
+        {
+          path:"login",
+          element:<Login />
+        },
+        {
+          path:"technologies",
+          element:<Technologies />
+        }
+      ]
+    },
+  ]);
+
+  return <RouterProvider router={browserRouterObj} />;
 }
 
 export default App;
