@@ -6,6 +6,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Technologies from './components/Technologies'
 import RouteError from "./components/RouteError";
+import UserProfile from './components/UserProfile'
 
 function App() {
   const browserRouterObj = createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
         {
           path:"login",
           element:<Login />
+        },
+        {
+          path:"user-profile",
+          element:<UserProfile />
         },
         {
           path:"technologies",
