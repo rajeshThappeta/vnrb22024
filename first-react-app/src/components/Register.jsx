@@ -8,6 +8,9 @@ function Register() {
   const navigate=useNavigate();
   const [err,setErr]=useState(null)
 
+
+  console.log("errors obj is ",errors)
+
   function handleFormSubmit(newUser){
     //make HTTP POST req
     fetch('http://localhost:3000/users',
@@ -49,10 +52,15 @@ function Register() {
           </label>
           <input
             type="text"
-            {...register("username")}
+            {...register("username",{required:true,minLength:4,maxLength:6})}
             id="un"
             className="form-control"
           />
+          {/* validation error msg for username */}
+          {errors.username?.type==='required' && <p className='text-danger'>*Username is required</p>}
+          {errors.username?.type==='minLength' && <p className='text-danger'>*Min length should be 4</p>}
+          {errors.username?.type==='maxLength' && <p className='text-danger'>*Max length should be 6</p>}
+
         </div>
         {/* password */}
         <div className="mb-3">
@@ -61,10 +69,12 @@ function Register() {
           </label>
           <input
             type="password"
-            {...register("password")}
+            {...register("password",{required:true})}
             id="pw"
             className="form-control"
           />
+            {/* validation error msg for password */}
+            {errors.password?.type==='required' && <p className='text-danger'>*Password is required</p>}
         </div>
         {/* email */}
         <div className="mb-3">
@@ -73,10 +83,12 @@ function Register() {
           </label>
           <input
             type="email"
-            {...register("email")}
+            {...register("email",{required:true})}
             id="em"
             className="form-control"
           />
+            {/* validation error msg for email */}
+            {errors.email?.type==='required' && <p className='text-danger'>*Email is required</p>}
         </div>
         {/* date of birth */}
         <div className="mb-3">
@@ -85,10 +97,12 @@ function Register() {
           </label>
           <input
             type="date"
-            {...register("dob")}
+            {...register("dob",{required:true})}
             id="db"
             className="form-control"
           />
+            {/* validation error msg for username */}
+            {errors.dob?.type==='required' && <p className='text-danger'>*Date of birth is required</p>}
         </div>
         {/* submit button */}
         <button className="btn btn-outline-info d-block mx-auto" type="submit">

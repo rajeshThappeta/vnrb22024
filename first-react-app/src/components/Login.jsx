@@ -16,8 +16,8 @@ function Login() {
         if(usersObjList.length===0){
           setUserLoginErr({message:"Username or Password is incorrect"})
         }else{
-         
-          navigate('/user-profile')
+         //navigate to user-profile component and transfer current user obj to it
+          navigate('/user-profile',{state:usersObjList[0]})
         }
       }).catch(err=>setUserLoginErr(err))
   }
@@ -45,10 +45,12 @@ function Login() {
         </label>
         <input
           type="text"
-          {...register("username")}
+          {...register("username",{required:true})}
           id="un"
           className="form-control"
         />
+        {/* validation err msg for username */}
+        {errors.username?.type==='required' && <p className='text-danger'>*Username is required</p>}
       </div>
       {/* password */}
       <div className="mb-3">
@@ -57,10 +59,12 @@ function Login() {
         </label>
         <input
           type="password"
-          {...register("password")}
+          {...register("password",{required:true})}
           id="pw"
           className="form-control"
         />
+         {/* validation err msg for password */}
+         {errors.password?.type==='required' && <p className='text-danger'>*Password is required</p>}
       </div>
      
      
