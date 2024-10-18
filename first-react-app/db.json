@@ -2,17 +2,17 @@
   "users": [
     {
       "id": "78cc",
-      "username": "ravi",
+      "username": "ravikumar",
       "password": "ravi",
-      "email": "ravi@mail.com",
+      "email": "ravikumar@mail.com",
       "dob": "2024-09-20"
     },
     {
-      "id": "5f3c",
       "username": "bhanu",
       "password": "bhanu",
       "email": "bhanu@gmail.com",
-      "dob": "2024-09-15"
+      "dob": "2024-09-15",
+      "id": "5f3c"
     },
     {
       "id": "ed13",
@@ -22,32 +22,11 @@
       "dob": "2024-09-12"
     },
     {
-      "id": "0b68",
-      "username": "vikas",
-      "password": "vikas",
-      "email": "vikas@mail.com",
-      "dob": "2024-09-28"
-    },
-    {
       "id": "f11b",
       "username": "test",
       "password": "test",
       "email": "test@mail.com",
       "dob": "2024-10-15"
-    },
-    {
-      "id": "82db",
-      "username": "test1",
-      "password": "test1",
-      "email": "test1@mail.com",
-      "dob": "2024-10-25"
-    },
-    {
-      "id": "09ae",
-      "username": "test4",
-      "password": "test3",
-      "email": "test4@mail.com",
-      "dob": "2024-10-13"
     }
   ]
 }
