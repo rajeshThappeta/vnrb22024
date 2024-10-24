@@ -1,12 +1,14 @@
-import {useState} from 'react';
-import {useLocation,useNavigate} from 'react-router-dom';
+import {useState,useContext} from 'react';
+import {useNavigate} from 'react-router-dom';
 import {useForm} from 'react-hook-form'
+import { loginContextObj } from '../contexts/LoginContext';
+
 
 function UserProfile() {
 
   //get state that sent by useNavigate hook
-  const obj= useLocation()
-  const [currentUser,setCurrentUser]=useState(obj.state)
+  
+  const { currentUser,setCurrentUser}=useContext(loginContextObj)
   const {register,handleSubmit,setValue}=useForm()
   const [isEdit,setIsEdit]=useState(false)
   const navigate=useNavigate()

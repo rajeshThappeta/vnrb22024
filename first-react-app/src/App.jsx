@@ -9,7 +9,11 @@ import RouteError from "./components/RouteError";
 import UserProfile from './components/UserProfile'
 import Java from "./components/Java";
 import Node from "./components/Node";
-import Vue from "./components/Vue";
+//import Vue from "./components/Vue";
+import {lazy,Suspense} from 'react'
+
+//dynamic import
+const Vue=lazy(()=>import('./components/Vue'))
 
 function App() {
   const browserRouterObj = createBrowserRouter([
@@ -48,7 +52,7 @@ function App() {
             },
             {
               path:'vue',
-              element:<Vue />
+              element: <Suspense fallback='loading....'><Vue /></Suspense> 
             },
             {
               path:'',

@@ -1,27 +1,24 @@
-import {useState} from 'react';
+import {useState,useContext,useEffect} from 'react';
 import {useForm} from 'react-hook-form';
 import {useNavigate} from 'react-router-dom'
+import { loginContextObj } from '../contexts/LoginContext';
+
+
 
 function Login() {
 
   const {register,handleSubmit,formState:{errors}}=useForm()
   const navigate=useNavigate();
   const [userLoginErr,setUserLoginErr]=useState(null);
+  const { loginError, loginStatus, onUserLogin}=useContext(loginContextObj)
 
-  function onUserLogin({username,password}){
-     
-      fetch(`http://localhost:3000/users?username=${username}&password=${password}`)
-      .then(res=>res.json())
-      .then(usersObjList=>{
-        if(usersObjList.length===0){
-          setUserLoginErr({message:"Username or Password is incorrect"})
-        }else{
-         //navigate to user-profile component and transfer current user obj to it
-          navigate('/user-profile',{state:usersObjList[0]})
-        }
-      }).catch(err=>setUserLoginErr(err))
-  }
 
+  useEffect(()=>{
+    if(loginStatus===true){
+      navigate('/user-profile')
+    }
+  },[loginStatus])
+   
 
   return (
     <div className="mt-4">
@@ -30,7 +27,7 @@ function Login() {
     </h1>
     {/* user registration error message */}
     {
-      userLoginErr!==null&& <p className='text-danger fs-1 text-center'>{userLoginErr.message}</p>
+      loginError!==null&& <p className='text-danger fs-1 text-center'>{loginError.message}</p>
     }
 
     {/* from */}
